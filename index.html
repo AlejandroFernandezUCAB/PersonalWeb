@@ -1,35 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Pedro Fernández</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">    
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
 </head>
 
 <body>
+    <!--Header-->
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <strong>Pedro Fernández</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+             <!--   <li class="nav-item">
+                  <a class="nav-link" href="#">Li</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar -->
+        
+        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <!--Modal: Contact form-->
+            <div class="modal-dialog cascading-modal" role="document">
 
-    <!-- Start your project here-->
-    <div style="height: 100vh">
-        <div class="flex-center flex-column">
-            <h1 class="animated fadeIn mb-4">Material Design for Bootstrap</h1>
+                <!--Content-->
+                <div class="modal-content">
 
-            <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+                    <!--Header-->
+                    <div class="modal-header primary-color white-text">
+                        <h4 class="title">
+                            <i class="fa fa-pencil"></i> Contacto</h4>
+                        <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body">
+                            <form method="post" id="formdata">
+                            <!-- Nombre -->
+                            <div class="md-form form-sm">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="text" id="materialFormNameModalEx1" class="form-control form-control-sm" required>
+                                <label for="materialFormNameModalEx1">Nombre</label>
+                            </div>
 
-            <p class="animated fadeIn text-muted">MDB Team</p>
+                            <!-- Email -->
+                            <div class="md-form form-sm">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="email" id="materialFormEmailModalEx1" class="form-control form-control-sm" required>
+                                <label for="materialFormEmailModalEx1">Correo</label>
+                            </div>
+
+                            <!-- Asunto -->
+                            <div class="md-form form-sm">
+                                <i class="fa fa-tag prefix"></i>
+                                <input type="text" id="materialFormSubjectModalEx1" class="form-control form-control-sm" required>
+                                <label for="materialFormSubjectModalEx1">Asunto</label>
+                            </div>
+
+                            <!-- Textarea -->
+                            <div class="md-form form-sm">
+                                <i class="fa fa-pencil prefix" aria-hidden="true"></i>
+                                <textarea type="text" id="materialFormMessageModalEx1" class="md-textarea form-control" minlength="10" required></textarea>
+                                <label for="materialFormMessageModalEx1">Mensaje</label>
+                            </div>
+
+                            <div class="text-center mt-4 mb-2">
+                                <button type="submit" class="btn btn-primary">Enviar
+                                    <i class="fa fa-send ml-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+            <!--/Modal: Contact form-->
         </div>
-    </div>
-    <!-- /Start your project here-->
+                      
+        <!-- Full Page Intro -->
+        <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('img/background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-white-light d-flex justify-content-center align-items-center">
+            <!-- Content -->
+            <div class="container">
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-md-12 white-text text-center">
+                  <h1 class="display-3 mb-0 pt-md-5 pt-5 white-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">Pedro
+                    <a class="font-weight-bold" style="color:#90caf9;">Fernández</a>
+                  </h1>
+                  <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">Desarrollador web, móvil y backend</h5>
+                  <div class="wow fadeInDown" data-wow-delay="0.3s">
+                    <a class="btn btn-light-blue btn-lg" data-toggle="modal" data-target="#modalContactForm" >Contacto</a>
+                    <!--<a class="btn btn-indigo btn-lg">Sobre mí</a>-->
+                  </div>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </div>
+            <!-- Content -->
+          </div>
+          <!-- Mask & flexbox options-->
+        </div>
+        <!-- Full Page Intro -->
+    </header>
+    <!--Fin de header-->
 
+    <!--Contenido-->
+    <!--Fin de contenido -->
+
+    <!--Footer-->
+    <!--Fin de f=ooter-->
+    
     <!-- SCRIPTS -->
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
