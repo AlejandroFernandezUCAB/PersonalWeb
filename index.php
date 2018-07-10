@@ -120,7 +120,7 @@
                   <h1 class="display-3 mb-0 pt-md-5 pt-5 white-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">Pedro
                     <a class="font-weight-bold" style="color:#90caf9;">Fernández</a>
                   </h1>
-                  <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">Desarrollador web, móvil y backend</h5>
+                  <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">Desarrollador web y móvil</h5>
                   <div class="wow fadeInDown" data-wow-delay="0.3s">
                     <a class="btn btn-light-blue btn-lg" data-toggle="modal" data-target="#modalContactForm" >Contacto</a>
                     <!--<a class="btn btn-indigo btn-lg">Sobre mí</a>-->
