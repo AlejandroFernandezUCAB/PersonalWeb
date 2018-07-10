@@ -65,41 +65,41 @@
                     </div>
                     <!--Body-->
                     <div class="modal-body">
-                            <form method="post" id="formdata">
-                            <!-- Nombre -->
-                            <div class="md-form form-sm">
-                                <i class="fa fa-envelope prefix"></i>
-                                <input type="text" id="materialFormNameModalEx1" class="form-control form-control-sm" required>
-                                <label for="materialFormNameModalEx1">Nombre</label>
-                            </div>
+                            <form method="post" id="formdata" action="php/form.php">
+                              <!-- Nombre -->
+                              <div class="md-form form-sm">
+                                  <i class="fa fa-envelope prefix"></i>
+                                  <input name="nombre" type="text" id="materialFormNameModalEx1" class="form-control form-control-sm" required>
+                                  <label for="materialFormNameModalEx1">Nombre</label>
+                              </div>
 
-                            <!-- Email -->
-                            <div class="md-form form-sm">
-                                <i class="fa fa-lock prefix"></i>
-                                <input type="email" id="materialFormEmailModalEx1" class="form-control form-control-sm" required>
-                                <label for="materialFormEmailModalEx1">Correo</label>
-                            </div>
+                              <!-- Email -->
+                              <div class="md-form form-sm">
+                                  <i class="fa fa-lock prefix"></i>
+                                  <input name="correo" type="email" id="materialFormEmailModalEx1" class="form-control form-control-sm" required>
+                                  <label for="materialFormEmailModalEx1">Correo</label>
+                              </div>
 
-                            <!-- Asunto -->
-                            <div class="md-form form-sm">
-                                <i class="fa fa-tag prefix"></i>
-                                <input type="text" id="materialFormSubjectModalEx1" class="form-control form-control-sm" required>
-                                <label for="materialFormSubjectModalEx1">Asunto</label>
-                            </div>
+                              <!-- Asunto -->
+                              <div class="md-form form-sm">
+                                  <i class="fa fa-tag prefix"></i>
+                                  <input name="asunto" type="text" id="materialFormSubjectModalEx1" class="form-control form-control-sm" required>
+                                  <label for="materialFormSubjectModalEx1">Asunto</label>
+                              </div>
 
-                            <!-- Textarea -->
-                            <div class="md-form form-sm">
-                                <i class="fa fa-pencil prefix" aria-hidden="true"></i>
-                                <textarea type="text" id="materialFormMessageModalEx1" class="md-textarea form-control" minlength="10" required></textarea>
-                                <label for="materialFormMessageModalEx1">Mensaje</label>
-                            </div>
+                              <!-- Textarea -->
+                              <div class="md-form form-sm">
+                                  <i class="fa fa-pencil prefix" aria-hidden="true"></i>
+                                  <textarea name="mensaje" type="text" id="materialFormMessageModalEx1" class="md-textarea form-control" minlength="10" required></textarea>
+                                  <label for="materialFormMessageModalEx1">Mensaje</label>
+                              </div>
 
-                            <div class="text-center mt-4 mb-2">
-                                <button type="submit" class="btn btn-primary">Enviar
-                                    <i class="fa fa-send ml-2"></i>
-                                </button>
-                            </div>
-                        </form>
+                              <div class="text-center mt-4 mb-2">
+                                  <button type="submit" class="btn btn-primary">Enviar
+                                      <i class="fa fa-send ml-2"></i>
+                                  </button>
+                              </div>
+                            </form>
                     </div>
                 </div>
                 <!--/.Content-->
@@ -139,10 +139,59 @@
     <!--Fin de header-->
 
     <!--Contenido-->
+    <main>
+      <div class="container">
+        <!--Grid row-->
+        <div class="row py-5">
+          <!--Grid column-->
+          <div class="col-xl-12 col-md-12 mb-12">
+            <h1>Información personal</h1>
+                <img src="img/personal.jpg" class="img-fluid z-depth-1 float-left" alt="Responsive image">
+                <p style="margin-left: 10%">Mi nombre es Pedro Alejandro Fernández tengo 22 años y soy estudiante de Ingeniería en Informática en la Universidad Católica 
+                    Andrés Bello (UCAB) ubicada en Caracas, Venezuela.
+                </p>
+          </div>
+            <div class="col-md-12 text-justify">
+            <h2>Experiencia</h2>
+            <ul>
+              <li>
+                <strong>Desarrollador móvil y web</strong>
+                <br>Alquimica Quimerica C.A <br> Junio 2017 - presente
+              </li>
+              <li>
+                <strong>Desarrollador web</strong>
+                <br>
+                www.equiposymaquinasindustriales.com.ve 
+                <br>Febrero - Mayo 2017
+              </li>
+            </ul>
+            <h2>Educación</h2>
+            <ul>
+              <li>
+                <strong>Universidad Católica Andrés Bello</strong>
+                <br>
+                Ingeniería en Informática
+                <br>
+                2013 -  Actualidad
+              </li>
+              <li>
+                <strong>Liceo Militarizado Generalísimo Francisco de Miranda</strong>
+                <br>
+                Bachillerato
+                <br>
+                2008 -  2013
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+    </main>
     <!--Fin de contenido -->
 
     <!--Footer-->
-    <!--Fin de f=ooter-->
+    <!--Fin de footer-->
     
     <!-- SCRIPTS -->
     <!-- JQuery -->
